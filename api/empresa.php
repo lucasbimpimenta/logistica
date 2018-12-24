@@ -12,7 +12,7 @@
             if(!empty($_GET["id"]))
             {
                 $id = $_GET["id"];
-                $retorno = new Empresa($id);
+                $retorno = Util::objetoParaArray(new Empresa($id));
             }
             else
             {
