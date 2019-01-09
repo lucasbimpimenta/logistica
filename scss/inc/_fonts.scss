@@ -1,0 +1,79 @@
+// Nunito Regular
+@font-face {
+  font-family:'Nunito';
+  src: url('../fonts/nunito/nunito-regular.eot');
+  src: url('../fonts/nunito/nunito-regular?#iefix') format('embedded-opentype'),
+  url('../fonts/nunito/nunito-regular.woff2') format('woff2'),
+  url('../fonts/nunito/nunito-regular.woff') format('woff'),
+  url('../fonts/nunito/nunito-regular.svg#Nunito Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family:'Nunito';
+  src: url('../fonts/nunito/nunito-semibold.eot');
+  src: url('../fonts/nunito/nunito-semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/nunito/nunito-semibold.woff2') format('woff2'),
+  url('../fonts/nunito/nunito-semibold.woff') format('woff'),
+  url('../fonts/nunito/nunito-semibold.svg#Nunito SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+
+
+// Nunito Bold
+@font-face {
+  font-family:'Nunito';
+  src: url('../fonts/nunito/nunito-bold.eot');
+  src: url('../fonts/nunito/nunito-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/nunito/nunito-bold.woff2') format('woff2'),
+  url('../fonts/nunito/nunito-bold.woff') format('woff'),
+  url('../fonts/nunito/nunito-bold.svg#Nunito Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+
+// Futura Regular
+@font-face {
+  font-family:'Futura';
+  src: url('../fonts/futura/FuturaBT-Book.eot');
+  src: url('../fonts/futura/FuturaBT-Book?#iefix') format('embedded-opentype'),
+  url('../fonts/futura/FuturaBT-Book.woff2') format('woff2'),
+  url('../fonts/futura/FuturaBT-Book.woff') format('woff'),
+  url('../fonts/futura/FuturaBT-Book.svg#Futura Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family:'Futura';
+  src: url('../fonts/futura/FuturaBT-Medium.eot');
+  src: url('../fonts/futura/FuturaBT-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/futura/FuturaBT-Medium.woff2') format('woff2'),
+  url('../fonts/futura/FuturaBT-Medium.woff') format('woff'),
+  url('../fonts/futura/FuturaBT-Medium.svg#Futura SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+
+@font-face {
+  font-family:'Futura';
+  src: url('../fonts/futura/FuturaBT-Bold.eot');
+  src: url('../fonts/futura/FuturaBT-Bold?#iefix') format('embedded-opentype'),
+  url('../fonts/futura/FuturaBT-Bold.woff2') format('woff2'),
+  url('../fonts/futura/FuturaBT-Bold.woff') format('woff'),
+  url('../fonts/futura/FuturaBT-Bold.svg#Futura Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}

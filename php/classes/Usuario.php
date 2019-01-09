@@ -11,7 +11,6 @@
 
         public function dados() {
             $this->dados = LDAP::DadosUsuario($this->usuario);
-            mb
         }
 
         private function identificaPeloServidor() {
@@ -47,6 +46,49 @@
             }
             
         }
+		
+		public function token() {
+			
+			$header = [
+			   'alg' => 'HS256',
+			   'typ' => 'JWT'
+			];
+			$header = json_encode($header);
+			$header = base64_encode($header);
+
+			$payload = [
+			   'iss' => 'mg.caixa',
+			   'name' => 'Diogo',
+			   'email' => 'diogo.fragabemfica@gmail.com'
+			];
+			$payload = json_encode($payload);
+			$payload = base64_encode($payload);
+
+			$signature = hash_hmac('sha256',"$header.$payload",'minha-senha',true);
+			$signature = base64_encode($signature);
+
+			echo "$header.$payload.$signature";	
+		}
+		
+		public static function checkToken($token){
+
+			$part = explode(".",$token);
+			$header = $part[0];
+			$payload = $part[1];
+			$signature = $part[2];
+
+			$valid = hash_hmac('sha256',"$header.$payload",'minha-senha',true);
+			$valid = base64_encode($valid);
+
+			if($signature == $valid){
+			   echo "valid";
+			   return true;
+			}else{
+			   echo 'invalid';
+			}
+			
+			return false;
+		}
     }
 
 ?>
